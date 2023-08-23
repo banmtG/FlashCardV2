@@ -21,92 +21,20 @@
 </head>
 
 <style>
-    /* body{
-        margin:0px;
-        text-align: center;
-        font-family: cursive;
-    }
-    header{
-        width:100vw;
-        background: d1d1d1;
-    }
-    main{
-        width:100vw;
-        background: white;
-        margin : 40px
-    }
-    footer{
-        width:100vw;
-        margin : 40px;
-        background: brown;
-    }
-    .touchsurface{
-        width:100%s;
-        height:200px;
-        background:yellow;
-        float: left;
-        margin: 15px;
-    } */
+  
     #myElement {
-  background: silver;
-  height: 300px;
-  text-align: center;
-  font: 30px/300px Helvetica, Arial, sans-serif;
-}
-    </style>
-    </head>
-    <body>  
-        <div id="myElement"></div>
-    <!-- <header id="headertag">
-            <div class="container">
-                <div class="page-header">
-                  <h1>Swipe <small>a pure Javascript plugin for touch devices</small></h1>
-                  <br/>			  
-                    <p>swipe is a Javascript plugin to be used on touch input devices such as surface, android, iPad, iPhone etc.</p>
-                    <P>Actualy it works on any divice with tuch support and runs Javascript</p>
-                </div>
-    
-                <h1>Features</h1>
-                <ul>
-                    <li>Detects swipes in 2 directions, "left" and "right"</li>
-                    <li>Allow to adjest sencitivity </li>
-                    <li>Allow to use Event Attrebute "onSwipe"</li>
-                    <li>Allow to add addEventListener "Swipe" on any element in Javascript</li>
-                </ul>
-    
-                <h1>Demos</h1>
-            
-    </header>
-    <main id="maintag">
-    
-     
-    <div id="touchsurface" class="touchsurface" onSwap="alert('Swaped ' + event.detail.direction + ' at ' + event.target.id);">
-    <h2>touchsurface</h2><p>Swipe event call by inline coding</p></div>
-    
-    <div id="touchsurface1" class="touchsurface" onSwap="touchsurfaceSwap(event)"><h2>touchsurface1</h2>Swipe event called by event attribute </div>
-    
-    <div id="touchsurface2" class="touchsurface" ><h2>touchsurface3</h2>Swipe event called by event in code </div>
-    
-    </main>
-    <footer id="someElement">
-    
-    </footer>
-    <script>
-    // onclick="alert(event.target.id);" swap.js
-            
-        touchsurface = document.getElementById('touchsurface2');
-        touchsurface.addEventListener("swap", function(event){alert('Swaped ' + event.detail.direction + ' at ' + event.target.id);}, false);
-        
-        function touchsurfaceSwap(event){
-            alert('Swiped ' + event.detail.direction + ' at ' + event.target.id);
-        }
-     
-    
-    
-    
-    
-    
-    </script> -->
+        background: silver;
+        height: 300px;
+        text-align: center;
+        font: 30px/300px Helvetica, Arial, sans-serif;
+    }
+</style>
+</head>
+
+<body>  
+
+    <div id="myElement"></div>
+   
     <script>
        var myElement = document.getElementById('myElement');
 
@@ -119,5 +47,5 @@
             myElement.textContent = ev.type +" gesture detected.";
         });
     </script>
-    </body>
-    </html>
+</body>
+</html>
