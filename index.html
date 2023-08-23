@@ -14,31 +14,12 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
+
+<style>
+
+</style>
+
 <body>
-    <div id="inserthere">s</div>
-    <script>
-        //load page via jquery-ajax
-        $.ajax({
-        url: "https://stackoverflow.com/questions/17636528/how-do-i-load-an-html-page-in-a-div-using-javascript",
-        context: document.body
-        }).done(function(data) {
-
-        //the previous request fails beceaus we dont have CORS on this url.... just for illlustration...
-
-        //get a list of DOM-Nodes 
-        var dom_nodes = $($.parseHTML(data));
-
-        //find the question-header
-        var content = dom_nodes.find('#question-header');
-
-        //create a new div and set the question-header as it's content 
-        var newEl = document.createElement("div");
-        $(newEl).html(content.html());
-        
-        //on our page, insert it in div with id 'inserthere'
-        $("[id$='inserthere']").append(newEl);
-        });
-    </script>
-    
+   
 </body>
 </html>
